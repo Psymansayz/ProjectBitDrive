@@ -1,0 +1,19 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "babel-eslint": "^8.2.1",
+    "body-parser": "^1.18.2",
+    "chainode": "^0.0.1",
+    "crypto-js": "^3.1.9-1",
+    "eslint": "^4.16.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "express": "^4.16.2",
+    "pouchdb-node": "^6.4.2",
+    "ws": "^4.0.0"
+  }
+}
