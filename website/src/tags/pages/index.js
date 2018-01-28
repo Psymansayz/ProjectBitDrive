@@ -1,3 +1,5 @@
 require('./home.tag')
 require('./aboutUs.tag')
 require('./search.tag')
+require('./HowTo.tag')
+require('./Privacy.tag')

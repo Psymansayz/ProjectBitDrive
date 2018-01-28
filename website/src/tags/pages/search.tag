@@ -44,6 +44,20 @@
     </div>
   </div>
   <script>
-  
+    this.on('mount', async () => {
+      const res = await fetch('http://localhost:3001/blocks')
+      this.searchItems = await res.json()
+      this.searchItems = this.searchItems.map((item) => {
+        let out = {}
+        try {
+          out = JSON.parse(item.data)
+        } catch (e) {
+          out = {}
+        }
+        return out
+      })
+      console.log(this.searchItems)
+      this.update()
+    })
   </script>
 </search>
