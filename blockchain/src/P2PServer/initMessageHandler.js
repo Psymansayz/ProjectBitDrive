@@ -7,7 +7,6 @@ const responseChainMsg = require('./responseChainMsg')
 module.exports = (ws) => {
   ws.on('message', (data) => {
     const message = JSON.parse(data)
-    console.log(`Received message${  JSON.stringify(message)}`)
     switch (message.type) {
     case MessageType.QUERY_LATEST:
       write(ws, responseLatestMsg())
